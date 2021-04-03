@@ -2,8 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { H1, MediumText } from "../styles/TextStyles"
 import { themes } from "../styles/ColorStyles"
+import PurchaseButton from "../buttons/PurchaseButton"
 
-function HeroSection() {
+export default function HeroSection() {
   return (
     <Wrapper>
       <ContentWrapper>
@@ -16,13 +17,15 @@ function HeroSection() {
             Don’t skip design. Learn design and code, by building real apps with
             React and Swift. Complete courses about the best tools.
           </Description>
+          <PurchaseButton
+            title="Start learning"
+            subtitle="120+ hours of video"
+          />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
   )
 }
-
-export default HeroSection
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #4316db 0%, #9076e7 100%);
